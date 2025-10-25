@@ -349,4 +349,3 @@ function Status({label, round}){
   )
 }
 
-export default App
