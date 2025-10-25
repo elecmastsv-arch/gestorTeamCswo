@@ -71,8 +71,6 @@ export default function Login({ onSuccess }) {
             Entrar
           </button>
         </form>
-        <p className="mt-4 text-xs text-white/60 text-center">
-          Consejo: usa <span className="text-white/90">TeamCswo</span> / <span className="text-white/90">purasweas</span>
         </p>
       </div>
     </div>
