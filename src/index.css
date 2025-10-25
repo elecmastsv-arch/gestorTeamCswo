@@ -1,0 +1,13 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--neon:#00bfff;--cyan:#5ef1ff}
+html,body,#root{height:100%;margin:0;background:radial-gradient(900px 600px at 10% -10%, rgba(0,191,255,0.12), transparent 60%),radial-gradient(900px 600px at 110% 110%, rgba(0,191,255,0.12), transparent 60%),linear-gradient(180deg,#010512 0%,#000 100%);color:white;font-family:'Rajdhani',system-ui,Arial}
+.neon-title{font-family:'Orbitron',sans-serif;text-shadow:0 0 10px rgba(0,191,255,.9),0 0 24px rgba(0,191,255,.6);animation:glow 2.6s ease-in-out infinite}
+@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(0,191,255,.6),0 0 18px rgba(0,191,255,.3)}50%{text-shadow:0 0 20px rgba(0,191,255,1),0 0 40px rgba(0,191,255,.8)}}
+@keyframes float{0%,100%{transform:translateY(0);opacity:.7}50%{transform:translateY(-16px);opacity:1}}
+.animate-float{animation:float 12s ease-in-out infinite}
+.card{@apply bg-white/5 border border-white/10 rounded-2xl p-6 shadow-[0_0_24px_rgba(0,191,255,.35)]}
+.btn{@apply px-4 py-2 rounded-xl font-semibold transition; background:linear-gradient(180deg,var(--neon) 0%,#00a6e6 100%); color:white; box-shadow:0 0 16px rgba(0,191,255,.45)}
+.btn:hover{filter:brightness(1.08)}
+.btn-ghost{@apply px-4 py-2 rounded-xl border border-white/10 hover:border-white/30; background:rgba(255,255,255,.04)}
+.input{@apply w-full rounded-xl bg-black/40 border border-white/10 p-3 outline-none}
+.table-head{@apply text-gray-400 text-sm border-b border-white/10}
