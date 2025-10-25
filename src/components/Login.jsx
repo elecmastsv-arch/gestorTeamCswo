@@ -71,7 +71,6 @@ export default function Login({ onSuccess }) {
             Entrar
           </button>
         </form>
-        </p>
       </div>
     </div>
   );
